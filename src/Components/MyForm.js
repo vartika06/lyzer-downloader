@@ -72,7 +72,7 @@ class MyForm extends React.Component {
 								name='from'
 								className='form-control'
 								placeholder='DD/MM/YYYY'
-								style={{ width: '65%', height: '30px' }}
+								style={{ width: '75%', height: '30px' }}
 							/>
 						</div>
 						<div className='col-lg-5 col-sm-12 toField form-group'>
