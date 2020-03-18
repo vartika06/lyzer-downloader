@@ -132,6 +132,11 @@
   margin-left: 15px;
 }
 
+.filterBtn:hover {
+  background: #2196f3;
+  color: #fff;
+}
+
 .modal {
   position: fixed;
   top: 0;

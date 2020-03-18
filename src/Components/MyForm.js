@@ -49,15 +49,19 @@ class MyForm extends React.Component {
 				<div className='form-content'>
 					<div className='field row'>
 						<div className='col-lg-12 form-group'>
-							<label htmlFor='Company'>Company</label>
-							<input
-								type='text'
-								id='company'
-								name='company'
+							<label htmlFor='company'>Company</label>
+
+							<select
 								className='form-control'
+								value={this.state.company}
+								name='company'
 								onChange={this.onChange}
-								style={{ width: '75%', height: '30px' }}
-							/>
+								style={{ width: '75%', height: '30px', padding: '5px' }}
+							>
+								<option label='' />
+								<option>Berrylush</option>
+								<option>JumpUSA</option>
+							</select>
 						</div>
 					</div>
 					<div className='field row'>
