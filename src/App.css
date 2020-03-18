@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +8,19 @@
 
 .App {
   font-family: "Source Sans Pro", sans-serif;
+  height: 100vh;
 }
 
 .formStyle {
   position: relative;
   top: 206px;
   left: 121px;
+}
+
+.thanks-div {
+  width: 60%;
+  margin: auto;
+  margin-top: 80px;
 }
 
 .formHeading,
@@ -25,12 +33,10 @@
   text-align: left;
 }
 
-.thanksHeading {
-  transform: translate(295px, 130px);
-}
+
+
 
 .thanksContent {
-  transform: translate(295px, 155px);
   color: #2196f3;
   font-family: "Source Sans Pro";
   font-size: 17px;
@@ -39,6 +45,16 @@
   text-decoration: none;
   text-align: left;
 }
+
+.csv-btns {
+  background: #673ab7;
+  margin: 10px 10px 0 0;
+}
+
+.csv-btns:hover {
+  background: #2196f3;
+}
+
 
 .field {
   color: #616161;
@@ -144,6 +160,7 @@
   grid-template-columns: auto auto auto;
   background: white;
 }
+
 .calendar-year {
   grid-column: 1 / span 3;
   padding-left: 220px;
@@ -156,9 +173,11 @@
 .upControl {
   margin-right: 20px;
 }
+
 .downControl {
   margin-left: 20px;
 }
+
 .upControl,
 .downControl {
   color: #2196f3;
@@ -168,6 +187,7 @@
 .options {
   padding: 10px;
 }
+
 .from-date,
 .to-date {
   grid-column: 1 / span 7;
@@ -205,22 +225,27 @@
   grid-template-columns: auto auto auto auto auto auto auto;
   height: 125px;
 }
+
 .prevControl {
   justify-self: start;
   margin-left: 12px;
 }
+
 .previous-month {
   justify-self: start;
 }
+
 .current-month {
   justify-self: end;
 }
+
 .previous-month,
 .current-month {
   color: #000;
   font-size: 14px;
   font-weight: bold;
 }
+
 .nextControl {
   justify-self: end;
   margin-right: 12px;
@@ -279,6 +304,7 @@
   color: rgba(75, 59, 148, 0.9);
   font-weight: 550;
 }
+
 .today,
 .yesterday,
 .last-seven,
@@ -336,6 +362,7 @@ input {
   font-size: 12px;
   margin-top: 10px;
 }
+
 .button-cancel {
   grid-column: 1 / span 8;
   justify-self: end;
@@ -385,6 +412,7 @@ input {
   .formHeading {
     font-size: 20px;
   }
+
   .filterBtn {
     transform: translate(-180px, 10px);
   }
@@ -393,13 +421,5 @@ input {
     margin-left: 0;
   }
 
-  .thanksHeading {
-    font-size: 18px;
-    transform: translate(100px, 130px);
-  }
 
-  .thanksContent {
-    font-size: 15px;
-    transform: translate(100px, 155px);
-  }
 }
