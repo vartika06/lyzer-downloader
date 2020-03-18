@@ -36,18 +36,18 @@ class Thanks extends React.Component {
 				<div className='row'>
 					<h1 className='thanksHeading'>Thanks {localStorage.getItem('company')}</h1>
 				</div>
-				<div className='row'>
+				{/* <div className='row'>
 					<p className='thanksContent'> Your csv will be downloaded in a minute.</p>
-				</div>
+				</div> */}
 				<div className='row'>
 					<button className='btn csv-btns'>
-						<a href={link1} style={{ textDecoration: 'none', color: '#fff' }}>
+						<a href={link1} target='_blank' style={{ textDecoration: 'none', color: '#fff' }}>
 							Get CSV
 						</a>
 					</button>
 
 					<button className='btn csv-btns'>
-						<a href={link2} style={{ textDecoration: 'none', color: '#fff' }}>
+						<a href={link2} target='_blank' style={{ textDecoration: 'none', color: '#fff' }}>
 							Get CSV (SKU)
 						</a>
 					</button>
