@@ -1,9 +1,6 @@
 import React from 'react';
 import Filter from './Filter';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-
-import moment from 'moment';
 
 class MyForm extends React.Component {
 	state = {
@@ -47,7 +44,7 @@ class MyForm extends React.Component {
 			<form className='formStyle' onSubmit={this.onSubmit}>
 				<h1 className='formHeading row'>
 					<i className='fa fa-download mt-5' aria-hidden='true' style={{ marginRight: '10px' }} />
-					Download your CSV
+					Download Analytics Data
 				</h1>
 				<div className='form-content'>
 					<div className='field row'>
