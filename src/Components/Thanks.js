@@ -32,27 +32,25 @@ class Thanks extends React.Component {
 			'company'
 		)}&fromDate=${localStorage.getItem('unix1')}&toDate=${localStorage.getItem('unix2')}`;
 		return (
-			<div className='container-fluid'>
-				<div className='thanks-div'>
-					<div className='row'>
-						<h1 className='thanksHeading'>Thanks {localStorage.getItem('company')}</h1>
-					</div>
-					<div className='row'>
-						<p className='thanksContent'> Your csv will be downloaded in a minute.</p>
-					</div>
-					<div className='row'>
-						<button className='btn csv-btns'>
-							<a href={link1} target='_blank' style={{ textDecoration: 'none', color: '#fff' }}>
-								Get CSV
-							</a>
-						</button>
+			<div className='thanks-div'>
+				<div className='row'>
+					<h1 className='thanksHeading'>Thanks {localStorage.getItem('company')}</h1>
+				</div>
+				<div className='row'>
+					<p className='thanksContent'> Your csv will be downloaded in a minute.</p>
+				</div>
+				<div className='row'>
+					<button className='btn csv-btns'>
+						<a href={link1} style={{ textDecoration: 'none', color: '#fff' }}>
+							Get CSV
+						</a>
+					</button>
 
-						<button className='btn csv-btns'>
-							<a href={link2} target='_blank' style={{ textDecoration: 'none', color: '#fff' }}>
-								Get CSV (SKU)
-							</a>
-						</button>
-					</div>
+					<button className='btn csv-btns'>
+						<a href={link2} style={{ textDecoration: 'none', color: '#fff' }}>
+							Get CSV (SKU)
+						</a>
+					</button>
 				</div>
 			</div>
 		);
