@@ -17,7 +17,10 @@ class App extends React.Component {
 
 	addCompany = (name) => {
 		this.setState({ company: name });
-		localStorage.setItem('company', name);
+		let newName = name.toUpperCase();
+		if (name === 'JumpUSA') newName = 'JUMP-USA';
+		console.log(newName);
+		localStorage.setItem('company', newName);
 	};
 
 	addRange = (range) => {

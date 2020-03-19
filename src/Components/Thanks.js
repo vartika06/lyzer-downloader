@@ -42,7 +42,7 @@ class Thanks extends React.Component {
 				<div className='row'>
 					<button className='btn csv-btns'>
 						<a href={link1} target='_blank' style={{ textDecoration: 'none', color: '#fff' }}>
-							Get CSV
+							Get CSV (BASE)
 						</a>
 					</button>
 
